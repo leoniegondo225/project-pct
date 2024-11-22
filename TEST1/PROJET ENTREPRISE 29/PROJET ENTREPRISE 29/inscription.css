@@ -1,0 +1,168 @@
+body::before {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    text-decoration-style: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    outline: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: thin;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: url(images/IMG-20240702-WA0018.jpg) fixed no-repeat;
+    background-size: cover;
+    /* overflow: hidden; Empêche le défilement si l'image dépasse */
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 6rem;
+    font-family: Arial, sans-serif;
+    background: url(images/IMG-20240702-WA0018.jpg) fixed no-repeat;
+    background-size: cover;
+    /* overflow: hidden;  Empêche le défilement si l'image dépasse */
+}
+
+.container {
+    display: flex;
+    width: 1000px;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    border-radius: 20px; /* Optionnel : ajout d'une bordure arrondie */
+    /* overflow: hidden; Assurez-vous que le contenu ne dépasse pas les bords */
+}
+
+.form-container {
+    padding: 40px;
+    background-color: white;
+    width: 60%;
+}
+
+.image-container {
+    background: url('images/sing_img.jpg') center/ cover no-repeat;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(34, 34, 34);
+    text-align: center;
+    font-size: 30px; /* Taille de la police */
+    font-weight: bold; /* Texte en gras */
+}
+
+
+h2 {
+    margin-bottom: 30px;
+    color: #fa4002;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #0a0a0a;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.forgot-password {
+    display: block;
+    margin: 20px 0;
+    color: #022255;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f24203;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:#f24203;
+}
+
+.signup-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-text a {
+    color: #012787;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    width: calc(100% - 30px);
+    padding-right: 30px;
+}
+
+.password-container i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #0d0c0c;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.back-to-home {
+    color: #f24203;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.back-to-home i {
+    margin-right: 8px;
+}
+
+.back-to-home:hover {
+    text-decoration: underline;
+}

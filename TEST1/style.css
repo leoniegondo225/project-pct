@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+/* ----------------------------------Le reset css--------------------------------------- */
+::before, :after, *{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    text-decoration-style: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    outline: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: thin;
+    font-family: "Poppins", sans-serif;
+
+}
+body{
+    height: 100vh;
+    padding: 3rem;
+    background: url(images/IMG-20240702-WA0018.jpg) fixed no-repeat;
+    background-size: cover;
+}
+/* La barre de naviguation*/
+.nav_bar{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav_col1{
+    width: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(207, 84, 2);
+    border-radius: 100%;
+}
+.nav_col1 a{
+    text-align: center;
+}
+.nav_col1 img{
+    width: 90%;
+    height: 100%;
+    border-radius: 100%;
+}
+.nav_col2{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back:hover{
+    color: rgb(207, 84, 2);
+    font-weight: bold;
+    font-size: 20px;
+    transition: .09s;
+}
+.nav_links, .back{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    margin-left: 10px;
+}
+/* La recherche */
+.search{
+    height: 50%;
+    background: url(images/IMG-20240702-WA0003.jpg) fixed no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+    border-top: 3px solid rgb(207, 84, 2);
+}
+form{
+    width: 40%;
+    height: 15%;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+input{
+    width: 90%;
+    height: 100%;
+    border-radius: 100px;
+    padding: 20px;
+}
+form button{
+    width: 10%;
+    height: 70%;
+    border-radius: 100px;
+    margin-right: 20px;
+}
+form img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    margin-right: 20px;
+}
+/* Les articles */
+article{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.cols{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 100%;
+    padding: 1px;
+
+}
+.logo a{
+    text-align: center;
+}
+.cols img{
+    width: 70%;
+    height: 90%;
+}
+.article img{
+    width: 90%;
+    height: 120px;
+    margin-top: 10px;
+
+}
+.article a{
+    color: black;
+}
+.col0{
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.col0 button{
+    width: 150px;
+    height: 30px;
+    margin-bottom: 75px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.952);
+    border-radius: 50px;
+}

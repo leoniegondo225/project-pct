@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+/* ----------------------------------Le reset css--------------------------------------- */
+::before, ::after, *{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    text-decoration-style: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    outline: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: thin;
+    font-family: "Poppins", sans-serif;
+
+}
+body{
+    height: 100vh;
+    padding: 0rem;
+    background: url(images/IMG-20240702-WA0018.jpg) fixed no-repeat;
+    background-size: cover;
+}
+/* La barre de naviguation*/
+.nav_bar {
+    position: fixed; /* Fixe la barre de navigation */
+    top: 0; /* Place la barre en haut de la fenêtre */
+    width: 100%; /* S'assure que la barre s'étend sur toute la largeur de la fenêtre */
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white; /* Assure que la couleur de fond est définie, sinon il peut être transparent */
+    z-index: 1000; /* Assure que la barre de navigation est au-dessus des autres éléments */
+    border: 2px solid orange; /* Ajoute une bordure orange */
+}
+
+/* Le reste de vos styles reste inchangé */
+
+.nav_col1 {
+    width: 40px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(207, 84, 2);
+    border-radius: 100%;
+    transition: 0.3s ease;
+}
+
+.nav_col1:hover {
+    transform: scale(1.2);
+}
+
+.nav_col1 a {
+    text-align: center;
+}
+
+.nav_col1 img {
+    width: 90%;
+    height: 100%;
+    border-radius: 100%;
+    transition: 0.3s ease;
+}
+
+.nav_col22 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+.back:hover {
+    color: rgb(207, 84, 2);
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.nav_links, .back {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    margin-left: 20px;
+    transition: color 0.3s, font-size 0.3s;
+    margin-right: 50px;
+    font-weight: bold; /* Texte en gras */
+}
+
+.nav_links:hover, .active {
+    color: rgb(207, 84, 2);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.connexion_button {
+    background-color: rgb(207, 84, 2);
+    color: white; /* Couleur du texte */
+    font-size: 16px; /* Taille de la police */
+    font-weight: bold; /* Texte en gras */
+    text-decoration: none; /* Enlève le soulignement du texte */
+    border-radius: 25px; /* Coins arrondis pour le bouton */
+    border-radius: 20px; /* Ajoute des coins arrondis */
+    padding: 5px 10px; /* Ajoute du padding pour un peu d'espace autour du texte */
+    transition: border-color 0.3s ease; /* Ajoute une transition pour la couleur de bordure */
+}
+
+.connexion_button:hover {
+    border-color: darkorange; /* Change la couleur de la bordure au survol */
+}
+
+/* La recherche */
+.search{
+    height: 50%;
+    background: url(images/IMG-20240702-WA0003.jpg) fixed no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 20px;
+    border-top: 3px solid rgb(207, 84, 2);
+}
+form{
+    width: 40%;
+    height: 15%;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.3s ease;
+}
+form:hover {
+    transform: scale(1.2);
+}
+input{
+    width: 90%;
+    height: 100%;
+    border-radius: 100px;
+    padding: 20px;
+}
+input:hover{
+    border-color: rgb(207, 84, 2);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+form button{
+    width: 10%;
+    height: 70%;
+    border-radius: 100px;
+    margin-right: 20px;
+}
+form img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    margin-right: 20px;
+    transition: 0.3s ease;
+}
+form img:hover {
+    transform: scale(1.2);
+}
+
+/* La section description */
+.description {
+    padding: 20px;
+    background-color: #f9f9f9; /* Fond légèrement gris pour la section */
+    text-align: center; /* Centre le titre */
+    margin: 2rem;
+    height: auto; /* Maintient le ratio de l'image */
+    border-radius: 8px; /* Coins arrondis pour l'image */
+}
+
+.description h1 {
+    margin-bottom: 20px; /* Espacement sous le titre */
+    font-size: 24px; /* Taille de police du titre */
+}
+
+.articles h1 {
+    margin-bottom: 20px; /* Espacement sous le titre */
+    font-size: 24px; /* Taille de police du titre */
+    text-align: center;
+}
+
+.description_content {
+    display: flex; /* Utilisation de flexbox pour disposer le texte et l'image sur la même ligne */
+    align-items: center; /* Aligne les éléments au centre verticalement */
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 20px; /* Espacement entre le texte et l'image */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+}
+
+.description_text {
+    flex: 1; /* Permet au texte de prendre l'espace restant */
+    max-width: 50%; /* Limite la largeur maximale du texte */
+    text-align: left; /* Aligne le texte à gauche */
+}
+
+.description_text p {
+    font-size: 16px; /* Taille de police du texte */
+    line-height: 1.5; /* Espacement entre les lignes */
+    margin: 0; /* Enlève les marges par défaut */
+}
+
+.description img {
+    width: 40%; /* Réduit la taille de l'image pour qu'elle soit plus petite par rapport au texte */
+    height: auto; /* Maintient le ratio de l'image */
+    max-width: 400px; /* Limite la largeur maximale de l'image */
+    border-radius: 8px; /* Coins arrondis pour l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère autour de l'image */
+}
+
+/* Le bouton "En savoir plus" */
+.more_info_button {
+    display: inline-block; /* Permet de styliser le lien comme un bouton */
+    padding: 10px 20px; /* Espacement interne du bouton */
+    background-color: rgb(207, 84, 2); /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte */
+    font-size: 16px; /* Taille de la police */
+    font-weight: bold; /* Texte en gras */
+    text-decoration: none; /* Enlève le soulignement du texte */
+    border-radius: 25px; /* Coins arrondis pour le bouton */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transitions pour les effets au survol */
+    margin-top: 15px; /* Espacement au-dessus du bouton */
+}
+
+.more_info_button:hover {
+    background-color: rgb(255, 105, 0); /* Couleur de fond au survol */
+    transform: scale(1.05); /* Effet d'agrandissement au survol */
+}
+
+/*plan*/
+.plan {
+    background-color: #f0f0f0; /* Ajoute une couleur de fond */
+    margin: 0 auto; /* Centre la div horizontalement */
+    padding: 10px; /* Ajoute du padding pour un peu d'espace autour du contenu */
+    width: 95%; /* Définit la largeur de la div, ajustez selon vos besoins */
+    text-align: center; /* Centre le texte à l'intérieur de la div */
+    border-radius: 5px; /* Ajoute des coins arrondis à la div */
+}
+ 
+.plan h1{
+    margin-bottom: 20px; /* Espacement sous le titre */
+    font-size: 24px;
+}
+
+.description_text {
+    margin-top: 20px; /* Ajoute un espace entre le titre et le texte descriptif */
+}
+
+
+.more_plan_button {
+    display: inline-block; /* Assure que le bouton prend uniquement la place nécessaire */
+    margin-top: 10px; /* Ajoute un espace au-dessus du bouton */
+    padding: 10px 20px; /* Ajoute du padding pour le bouton */
+    background-color: rgb(207, 84, 2); /* Ajoute une couleur de fond pour le bouton */
+    color: white; /* Définit la couleur du texte du bouton */
+    font-weight: bold;
+    text-decoration: none; /* Supprime la décoration de lien par défaut */
+    border-radius: 20px; /* Ajoute des coins arrondis au bouton */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Ajoute une transition pour le changement de couleur de fond et de position */
+}
+
+.more_plan_button:hover {
+    background-color: rgb(255, 105, 0); /* Change la couleur de fond lorsque le bouton est survolé */
+    transform: translateY(-5px); /* Déplace le bouton vers le haut lorsqu'il est survolé */
+}
+
+/* Les articles */
+article{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 2rem;
+}
+.cols{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s ease;
+}
+.col1{
+    background-color: #f9f9f9;
+    max-width: 400px; /* Limite la largeur maximale de l'image */
+    border-radius: 8px; /* Coins arrondis pour l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère autour de l'image */
+    text-align: center;
+}
+.col2{
+    background-color: #f9f9f9;
+    max-width: 400px; /* Limite la largeur maximale de l'image */
+    border-radius: 8px; /* Coins arrondis pour l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère autour de l'image */
+    text-align: center;
+}
+.col3{
+    background-color: #f9f9f9;
+    max-width: 400px; /* Limite la largeur maximale de l'image */
+    border-radius: 8px; /* Coins arrondis pour l'image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre légère autour de l'image */
+    text-align: center;
+}
+.conteneur {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.cols:hover {
+    transform: scale(1.2);
+}
+.logo{
+    width: 50px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 100%;
+    padding: 1px;
+    transition: 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.2);
+}
+.logo a{
+    text-align: center;
+}
+.cols img{
+    width: 70%;
+    height: 90%;
+}
+.article img{
+    width: 90%;
+    height: 120px;
+    margin-top: 10px;
+
+}
+.article a{
+    color: black;
+}
+.col0{
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.col0 button{
+    width: 150px;
+    height: 30px;
+    margin-bottom: 75px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.952);
+    border-radius: 50px;
+}
+
+.nav_col2 a {
+    transition: color 0.3s, font-size 0.3s;
+}
+
+
+/*les chiffres*/
+
+
+
+.chiffres {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.chiffres-titre {
+    font-size: 2em;
+    color: #FF7F00;
+    margin-bottom: 10px;
+}
+
+.chiffres-description {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.chiffres-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.chiffre-item {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.chiffre {
+    font-size: 2.5em;
+    color: #cc4b00;
+    margin: 0;
+}
+
+.chiffre-titre {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.chiffre-description {
+    font-size: 1em;
+    color: #666;
+}
+
+
+/* Le pied de page */
+.footer {
+    background-color: #333; /* Fond sombre pour le pied de page */
+    color: #fff; /* Texte en blanc pour le contraste */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer_section {
+    width: 30%;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.footer_section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer_section p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.footer_section a {
+    color: #ffa500; /* Couleur des liens */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer_section a:hover {
+    text-decoration: underline;
+}
+
+.footer_section img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+}
+
+.footer_bottom {
+    border-top: 1px solid #444; /* Ligne de séparation */
+    padding-top: 60px;
+}
+
+.footer_bottom p {
+    margin: 0;
+    font-size: 12px;
+}
+

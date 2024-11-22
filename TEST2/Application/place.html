@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromArt.detail</title>
+    <link rel="stylesheet" href="macket.css"> 
+    <link rel="stylesheet" href="style.css"><!-- Ajout du lien vers accueil.css -->
+    <!-- Utilisation de la police Roboto depuis Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <style>
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        .nav_links:hover {
+            color: #ff5722;
+            transition: color 0.3s ease;
+        }
+    </style>
+
+
+    <nav class="nav_bar">
+        <div class="nav_col1">
+            <a href="connex.html"><img src="images/account.png" alt=""></a>
+        </div>
+        <div class="col22">
+            <a href="index.html" class="back" id="backButton">HOME</a>
+            <a href="#" class="nav_links">CHARIOT</a>
+            <a href="#" class="nav_links">A-PROPOS</a>
+            <a href="#" class="nav_links">CONTACT</a>
+            <a href="inscription.html" class="nav_links connexion_button">Inscription</a>
+        </div>
+    </nav> <br> 
+     <!-- La recherche -->
+     <div class="search">
+        <form method="post">
+            <input type="search" id="Search" placeholder="Search">
+            <button><img src="images/loop.png" alt=""></button>
+        </form>
+    </div> <br> <br>
+
+    <section class="events">
+        <div class="container">
+            <h2>SERVICE BLANCHISSERIE</h2>
+            <section class="content">
+                <div class="card">
+                    <img src="images/Blanchisserie.jpg" alt="">
+                    <h2>Blanchisserie D'Abidjan <br> (cocody, carréfou la vie)</h2>
+                    <p>Explorez les meilleux Blanchisseries les plus proche et faite voutre choix.</p>
+                    <a href="#">Aller-y</a>
+                </div>
+                <div class="card">
+                    <img src="images/Blanchisserie.jpg" alt="">
+                    <h2>Blanchisserie D'Abidjan <br> (Coumassi)</h2>
+                    <p>Explorez les meilleux Blanchisseries les plus proche et faite voutre choix.</p>
+                    <a href="#">Allez-y</a>
+                </div>
+                <div class="card">
+                    <img src="images/Blanchisserie.jpg" alt="">
+                    <h2>Blanchisserie de Bouaké </h2><br>
+                        <p>Explorez les meilleux Blanchisseries les plus proche et faite voutre choix.</p>
+                    <a href="#">Allez-y</a>
+                </div>
+                <div class="card">
+                    <img src="images/Blanchisserie.jpg" alt="">
+                    <h2>Blanchisserie de Yamoussoukro</h2> <br>
+                        <p>Explorez les meilleux Blanchisseries les plus proche et faite voutre choix.</p>
+                    <a href="#">Allez-y</a>
+                </div>
+                <div class="card">
+                    <img src="images/Blanchisserie.jpg" alt="">
+                    <h2>Blanchisserie de Korogo</h2> <br>
+                    <p>Explorez les meilleux Blanchisseries les plus proche et faite voutre choix.</p>
+                    <a href="#">Allez-y</a>
+                </div>
+                <div class="card">
+                    <img src="images/Blanchisserie.jpg" alt="">
+                    <h2>Blanchisserie de Gagnoa</h2> <br>
+                    <p>Explorez les meilleux Blanchisseries les plus proche et faite voutre choix.</p>
+                    <a href="#">Allez-y</a>
+                </div>
+                <div class="card">
+                    <img src="images/Blanchisserie.jpg" alt="">
+                    <h2>Blanchisserie de Toumodi </h2><br>
+                        <p>Explorez les meilleux Blanchisseries les plus proche et faite voutre choix.</p>
+                    <a href="#">Allez-y</a>
+                </div>
+                <div class="card">
+                    <img src="images/Blanchisserie.jpg" alt="">
+                    <h2>Blanchisserie de Séguéla </h2><br>
+                        <p>Explorez les meilleux Blanchisseries les plus proche et faite voutre choix.</p>
+                    <a href="#">Allez-y</a>
+                </div>
+                <div class="card">
+                    <img src="images/Blanchisserie.jpg" alt="">
+                    <h2>Blanchisserie de Sassandra </h2><br>
+                        <p>Explorez les meilleux Blanchisseries les plus proche et faite voutre choix.</p>
+                    <a href="#">Allez-y</a>
+                </div>
+            </section>
+        </div>
+    </section>
+    <div class="conteneur">
+        <a href="macke.html" class="article_button">Voir plus</a>
+    </div> <br><br>
+
+    <footer class="footer">
+        <div class="footer_content">
+            <div class="footer_section">
+                <h3>À propos</h3>
+                <p>Découvrez plus sur notre entreprise, notre mission et nos valeurs.</p>
+                <a href="#">En savoir plus</a>
+            </div>
+            <div class="footer_section">
+                <h3>Contact</h3>
+                <p>123 Rue Cocody, Abidjan, Côte d'Ivoire</p>
+                <p>Email: entreprise29@uvci.com</p>
+                <p>Téléphone: +225 456 7890</p>
+            </div>
+            <div class="footer_section">
+                <h3>Suivez-nous</h3>
+                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <p>&copy; 2024 @Entreprise 29. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('searchButton').addEventListener('click', function() {
+            let filter = document.getElementById('Search').value.toUpperCase();
+            let cards = document.getElementById('eventsContent').getElementsByClassName('card');
+            
+            for (let i = 0; i < cards.length; i++) {
+                let card = cards[i];
+                let title = card.getElementsByTagName('h2')[0];
+                if (title) {
+                    let textValue = title.textContent || title.innerText;
+                    if (textValue.toUpperCase().indexOf(filter) > -1) {
+                        card.style.display = "";
+                    } else {
+                        card.style.display = "none";
+                    }
+                }
+            }
+        });
+
+        // Ajout d'une animation de survol pour les boutons de navigation
+        document.querySelectorAll('.nav_links').forEach(link => {
+            link.addEventListener('mouseover', function() {
+                this.style.color = '#ff5722';
+            });
+            link.addEventListener('mouseout', function() {
+                this.style.color = '';
+            });
+        });
+    </script>
+</body>
+</html>

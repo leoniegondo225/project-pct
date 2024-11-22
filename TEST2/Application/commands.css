@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+/* ----------------------------------Le reset css--------------------------------------- */
+::before, :after, *{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    text-decoration-style: none;
+    box-sizing: border-box;
+    list-style-type: none;
+    outline: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: thin;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(241, 241, 241);
+    flex-direction: column;
+    margin: 0;
+}
+.body h3{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.account{
+    width: 45px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 100%;
+    padding: 3px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    
+}
+.account img{
+    width: 80%;
+    height: 90%;
+    border-radius: 100%;
+
+}
+p{
+    margin-left: 15px;
+    font-weight: 600;
+}
+h5{
+    margin-left: 14px;
+    font-size: 13px;
+    font-weight: 100;
+}
+h5{
+    margin-left: 14px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+
+.container{
+    width: 1000px;
+    background: url(images/IMG-20240702-WA0002.jpg) fixed no-repeat;
+    background-size: cover;
+}
+.body{
+    width: 500px;
+    padding: 5px;
+    margin: auto;
+    background-color: white;
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.wrap div{
+    width: 159px;
+    height: 190px;
+    text-align: center;
+    margin: 1px;
+}
+.wrap img{
+    width: 100%;
+    height: 80%;
+}
+.confirm_cmd{
+    text-align: center;
+    height: 35px;
+    background-color: #6967df;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 10px 0;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.confirm_cmd:hover {
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+.wrap button:hover{
+    cursor: pointer;
+}
+
+.fileInput {
+    display: none;
+}
+
+.preview {
+    display: none;
+    border:2px solid #ddd;
+    border-radius: 12px;
+    max-height: 60%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.style-button:hover {
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+.content-image {
+    margin-bottom: 20px;
+    text-align: center;
+}

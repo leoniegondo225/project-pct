@@ -1,0 +1,48 @@
+h2{
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #faf6f6;
+    margin left: 20%;
+    margin-right: 20%;
+    color: rgb(43, 40, 226);
+    display: inline-block;
+    border: 2px solid #ccc;
+
+}
+input[type=text]{
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: nome;
+    outline-color: rgb(99, 105, 192);
+
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #00f;
+    color: white;
+    margin: 8px 0;
+    padding: 13px 19px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    transition: 500ms;
+    background-color: #00f; 
+}
+
+.form__block{
+    padding: 20px;
+    border-radius: 5px;
+    background-color: gainsboro;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+
